@@ -15,12 +15,18 @@ public class Application
         {
             case "build":
                 
-                Console.WriteLine("Start build");
+                compiler.Build.Run(args);
                 break;
             
             
-            default:
+            case "version":
+            case "-v":
+            case "-version":
+            case "-V":
+                Help.Version();
+                break;
                 
+            default:
                 Help.Log();
                 break;
             
