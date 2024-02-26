@@ -1,0 +1,2 @@
+Print.title("Hello, World!", "@a", "title")
+Print.say("Hello<command say>")
